@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- #userForm="ngForm" (ngSubmit)="sendForm()" -->
+<div class="container">
+    <h2>Contact Form</h2>
+    <form #contactForm="ngForm">
+
+        <div> 
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" [(ngModel)]="form.name"><br>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email"  id="email" name="email" required
+            [(ngModel)]="form.email" email="true"><br>
+        </div>
+
+        <div>
+            <label for="subject">Subject:</label><br>
+            <input type="text"  id="subject" required
+            [(ngModel)]="form.subject"  name="subject"><br>
+            
+        </div>
+
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea rows = "10" cols = "60"  id="message" name = "message" placeholder="Enter message here..." required
+            [(ngModel)]="form.message">
+            </textarea><br><br>
+        </div>
+        
+        <button type="submit" (click)="sendForm()">Submit</button>
+    </form>
+
+</div>
