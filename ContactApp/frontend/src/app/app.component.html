@@ -1,1 +1,26 @@
-<app-contact-form></app-contact-form>
+<mat-sidenav-container fullscreen class="sidenav-container">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <span class="menu-spacer"></span>
+            <div>
+            <button mat-button routerLink="" > 
+                <span class="mat-button-wrapper">Home</span>
+            </button>
+            <button mat-button routerLink=""> 
+                <span class="mat-button-wrapper">Favourites</span>
+            </button>
+            <button mat-button routerLink="contact-form"> 
+                <span class="mat-button-wrapper">Contact</span>
+            </button>
+            <button mat-button routerLink=""> 
+                <span class="mat-button-wrapper">Login</span>
+            </button>
+            <button mat-button routerLink="register-page">
+                <span class="mat-button-wrapper">Register</span>
+            </button>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
+

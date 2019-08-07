@@ -21,10 +21,10 @@ export class ContactFormComponent implements OnInit {
         this.form = data;
       },
       error => {
-        if(error.status == 500){
-          this.toast.error("Reached rate limit, wait 10 minutes.", "Error");
+        if (error.status == 500) {
+          this.toast.error('Reached rate limit, wait 10 minutes.', 'Error');
         } else {
-          this.toast.error("Check if the email is correct or all required fields are filled.", "Error");
+          this.toast.error('Check if the email is correct or all required fields are filled.', 'Error');
         }
       }
     );
